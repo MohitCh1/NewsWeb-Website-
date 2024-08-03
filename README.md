@@ -15,8 +15,5 @@ This is a dynamic and user-friendly news website that aggregates and displays th
 - **Frontend**: HTML, CSS, JavaScript
 - **APIs**: News API (https://newsapi.org/)
 
-## Setup Instructions
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/MohitCh1/news-website.git
+
 
