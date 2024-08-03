@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-main container flex">
+            <a href="#" onclick="reload()">
+                <p>NewsWeb</p>
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-items" id="finance" onclick="onNavClick('finance')">Finance</li>
+                    <li class="hover-link nav-items"id="technology" onclick="onNavClick('technology')">Technology</li>
+                    <li class="hover-link nav-items" id="science" onclick="onNavClick('science')">Science </li>
+
+                </ul>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="e.g. Cricket">
+                <button class="search-button" id="search-button">Search</button>
+
+            </div>
+            
+        </div>
+    </nav>
+     <main>
+        <div class="container-card container flex" id="container-cards">
+          
+           
+
+           
+
+          
+
+            
+        </div>
+     </main>
+
+      <template id="template-news-card"><!-- since we want multiple card through api it can be done by putting it in template this template is not seen in our website it can be seen by api-->
+        <div class="card">
+            <div class="header-card">
+                  <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img"> <!--a website to get placeholder images  -->
+
+            </div>
+
+            <div class="content-card">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">End Gadget 01/08/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eveniet repudiandae odio illo reiciendis voluptates deserunt ipsa ut earum sequi!</p>
+            </div>
+
+        </div>
+
+     </template>
+    <script src="script.js"></script>
+</body>
+</html>
